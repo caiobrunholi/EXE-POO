@@ -8,18 +8,18 @@ public class Conta{
     //Métodos da classe 
 
     void vizualizarSaldo(){
-
+        System.out.println("Saldo atual na conta " + numero + ": R$" + saldo);
     }
 
-    void depositar(){
-
+    void depositar(double valor){
+        saldo = saldo + valor;
     }
 
-    void sacar(){
-
+    void sacar(double valor){
+        saldo = saldo - valor;
     }
 
     void transferirDinheiro(){
-        
+
     }
 }
