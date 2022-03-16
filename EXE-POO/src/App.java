@@ -19,8 +19,14 @@ public class App {
         System.out.println("Saldo na outra conta:");
         outraConta.vizualizarSaldo();
 
-        minhaConta.depositar(500.00);
-        minhaConta.sacar(100.0);
+        if (!minhaConta.depositar(500.00)){
+            System.out.println("Operação falhou!");
+        }
+
+        if (!minhaConta.sacar(10000.0)){
+            System.out.println("Operação falhou!");
+        }
+
         minhaConta.vizualizarSaldo();
 
     }
