@@ -19,15 +19,23 @@ public class App {
         System.out.println("Saldo na outra conta:");
         outraConta.vizualizarSaldo();
 
-        if (!minhaConta.depositar(500.00)){
-            System.out.println("Operação falhou!");
-        }
+        // if (!minhaConta.depositar(500.00)){
+        //     System.out.println("Operação falhou!");
+        // }
 
-        if (!minhaConta.sacar(10000.0)){
-            System.out.println("Operação falhou!");
-        }
+        // if (!minhaConta.sacar(10000.0)){
+        //     System.out.println("Operação falhou!");
+        // }
 
+        // minhaConta.vizualizarSaldo();
+        minhaConta.transferirDinheiro(-100, outraConta);
+
+
+        System.out.println("Saldo na minha conta:");
         minhaConta.vizualizarSaldo();
+        System.out.println("Saldo na outra conta:");
+        outraConta.vizualizarSaldo();
+
 
     }
 }
